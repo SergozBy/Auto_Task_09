@@ -1,7 +1,7 @@
 plugins {
     id 'java'
     id 'io.qameta.allure' version '2.11.2'
-    id "io.freefair.lombok" version "8.2.2"
+    id "io.freefair.lombok" version "8.6"
 }
 
 group 'ru.netology'
@@ -32,7 +32,7 @@ dependencies {
     testImplementation 'com.google.code.gson:gson:2.10.1'
     testCompileOnly 'org.projectlombok:lombok:1.18.30'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.30'
-    testAnnotationProcessor 'io.qameta.allure:allure-selenide:2.20.1'
+    testImplementation 'io.qameta.allure:allure-selenide:2.20.1'
 }
 
 test {

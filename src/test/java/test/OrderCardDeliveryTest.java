@@ -3,6 +3,7 @@ package test;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.*;
 
 import java.time.Duration;
@@ -14,7 +15,6 @@ import static data.DataGenerator.getRandomLogin;
 import static data.DataGenerator.getRandomPassword;
 
 public class OrderCardDeliveryTest {
-
     @BeforeAll
     static void setUpAll() {
         SelenideLogger.addListener("allure", new AllureSelenide());
